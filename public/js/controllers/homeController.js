@@ -5,9 +5,9 @@
 (function () {
 
     angular.module('app')
-        .controller('homeController', ['dataService', '$route', '$log', '$state', homeController]);
+        .controller('homeController', ['dataService', '$route', '$log', homeController]);
 
-    function homeController(dataService, $route, $log, $state) {
+    function homeController(dataService, $route, $log) {
 
         var vm = this;
 
@@ -15,12 +15,12 @@
 
         vm.refresh = function () {
             $log.debug($route.current);
-            //$log.debug($route.routes);
-            //$route.reload();
+            $log.debug($route.routes);
+            $route.reload();
 
             //State Reload
 
-            $state.reload();
+            //$state.reload();
         };
 
 

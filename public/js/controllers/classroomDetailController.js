@@ -4,13 +4,12 @@
 
 //write route params code here
 
-/*
 (function () {
     angular.module('app')
         .controller('classroomDetailController', ['dataService', '$routeParams', classroomDetailController]);
     function classroomDetailController(dataService, $routeParams) {
 
-        /!*var vm = this;
+        /*var vm = this;
 
         dataService.getClassroom($routeParams.id)
             .then(function (classroom) {
@@ -21,7 +20,7 @@
         function showError(message) {
             notifier.error(message);
 
-        }*!/
+        }*/
         var vm = this;
 
         vm.month = $routeParams.month;
@@ -53,17 +52,17 @@
     }
     
 }());
-*/
 
 
 // write state params code here
 
+/*
 (function () {
     angular.module('app')
         .controller('classroomDetailController', ['dataService', '$routeParams', '$stateParams', classroomDetailController]);
     function classroomDetailController(dataService, $routeParams, $stateParams) {
 
-        /*var vm = this;
+        /!*var vm = this;
 
          dataService.getClassroom($routeParams.id)
          .then(function (classroom) {
@@ -74,7 +73,7 @@
          function showError(message) {
          notifier.error(message);
 
-         }*/
+         }*!/
         var vm = this;
 
         vm.month = $stateParams.month;
@@ -107,4 +106,4 @@
 
     }
 
-}());
+}());*/

@@ -27,7 +27,6 @@
 
 // write route params code
 
-/*
 (function () {
 
     angular.module('app')
@@ -66,12 +65,12 @@
     }
 
 }());
-*/
 
 
 // write state param code
 
 
+/*
 (function () {
 
     angular.module('app')
@@ -89,8 +88,8 @@
 
             $state.go('classroom_parent.classroom_detail', {id: vm.selectedClassroom.id,  month:vm.selectedMonth } )
 
-            /*var classroom_detail_url = '/classrooms/' + vm.selectedClassroom.id + '/detail/' + vm.selectedMonth;
-            $location.url(classroom_detail_url);*/
+            /!*var classroom_detail_url = '/classrooms/' + vm.selectedClassroom.id + '/detail/' + vm.selectedMonth;
+            $location.url(classroom_detail_url);*!/
         };
 
 
@@ -112,4 +111,4 @@
 
     }
 
-}());
+}());*/
